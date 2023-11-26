@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Venta } from 'src/app/models/juego';
 
 @Component({
   selector: 'app-table',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent {
+  @Input() table: Venta[] = [];
 
+  @Input() cargandoDatos = false;
+
+  ventaSeleccionada: Venta | null = null;
 }
