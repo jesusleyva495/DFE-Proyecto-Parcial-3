@@ -15,7 +15,7 @@ table {
   box-shadow: 0 0 20px rgba(54, 132, 138, 0.15);
 
   thead tr {
-    background-color: $color-primary;
+    background: $color-table;
     color: $font-color-light;
     text-align: left;
 
@@ -29,9 +29,10 @@ table {
 
   tbody tr {
     border-bottom: none;
+    color: black;
 
     &:nth-of-type(even) {
-      background-color: $background-color;
+      background-color: $color-table;
     }
 
     &:last-of-type {

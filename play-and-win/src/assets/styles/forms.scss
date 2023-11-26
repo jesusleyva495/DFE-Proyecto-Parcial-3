@@ -2,16 +2,19 @@
 
 
 .filter-section {
-  background-color: white;
+  background: #EEECE7;
   padding: 1.5rem;
   margin: 1rem 0;
   border: none;
+  box-shadow: 0.2em 1em 2em #DADAD7, inset 0 0 0 transparent,
+        inset 0 0 0 transparent;
   border: 1px solid darken($background-color, 10%);
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
   border-radius: 3px;
+  color: black;
 }
 
 

@@ -38,7 +38,7 @@ export class ExplorerComponent{
         const total = this.table.reduce((sum, ventas) => sum + ventas.precio, 0);
         return `${total}`;
       } else {
-        return 'No se han encontrado registros :(';
+        return 'No se han encontrado registros';
       }
     }
   }

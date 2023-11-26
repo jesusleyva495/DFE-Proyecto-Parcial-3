@@ -1,6 +1,7 @@
 $color-primary: hsl(210, 29%, 29%);
 $color-secondary: hsl(204, 70%, 53%);
-$color-tertiary: hsl(167, 40%, 55%);
+$color-tertiary: linear-gradient(to right,#121212, #303030, #424242, #000000);
+$color-table: linear-gradient(to right, #334455, #556677, #778899, #99AABB);
 $color-warning: hsl(0, 44%, 61%) !default;
 
 $background-color: #f3f6f9;
@@ -11,5 +12,6 @@ $font-color-light: #fff;
 
 $header-height: 88px;
 
-$workarea-background-color: #ffffff;
+$workarea-background: linear-gradient(to right, #D0D0D0, #B0B0B0, #909090, #707070);
+$workarea-background-color: linear-gradient(to right, #E0E0E0, #C0C0C0, #A0A0A0, #808080);
 $workarea-min-height: calc(100vh - 136px);
