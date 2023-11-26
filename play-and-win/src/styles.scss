@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import './styles/variables';
-@import './styles/base.scss';
-@import './styles/flex-layout.scss';
-@import './styles/header.scss';
-@import './styles/table.scss';
-@import './styles/forms.scss';
-@import './styles/modal.scss';
+@import './assets/styles/variables';
+@import './assets/styles/base.scss';
+@import './assets/styles/flex-layout.scss';
+@import './assets/styles/forms.scss';
+@import './assets/styles/header.scss';
+@import './assets/styles/modal.scss';
+@import './assets/styles/table.scss';
+@import './assets/styles/game-list.scss';
+@import './assets/styles/footer.scss';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

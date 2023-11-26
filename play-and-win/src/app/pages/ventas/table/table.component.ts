@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+
 import { Venta } from 'src/app/models/juego';
 
 @Component({

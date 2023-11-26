@@ -1,0 +1,64 @@
+:root{
+    --color-primario: #0D2340;
+    --color-secundario: #165873;
+    --color-terciario: #88F2F2;
+    --color-cuartario: #0AA696;
+    --color-quintario: #1BF2CB;
+    --color-white: #f3f6f9;
+    --color-negro: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-secundario);
+    color: var(--color-white);
+    text-align: center;
+    padding: 6rem 3rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-container {
+    width: 600px;
+    max-width: 100%;
+}
+
+.contacto-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+input, textarea{
+    border: 1px solid var(--color-secundario);
+    border-radius: 3px;
+}
+
+button.btn{
+    cursor: pointer;
+    background-color: var(--color-primario);
+    color: #f5f7fa;
+    font-size: 1rem;
+    padding: 1 1.5rem;
+    border: none;
+    transition: color 0.5s;
+}
+
+button.btn:hover{
+    background-color: var(--color-cuartario);
+}
+button.btn-delete {
+    background-color: white;
+    border: 2px solid #be1919;
+    color: #e26f6f;
+}
+
+button.btn-delete:hover {
+    background-color: #5c1818;
+}

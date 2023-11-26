@@ -6,14 +6,16 @@ import { VentasService } from 'src/app/services/ventas.service';
 import { DetallesComponent } from './detalles/detalles.component';
 import { ExplorerComponent } from './explorer/explorer.component';
 import { TableComponent } from './table/table.component';
-import { FiltroVentasComponent } from './filtro-ventas/filtro-ventas.component';
+import { TotalComponent } from './total/total.component';
+import { FiltroComponent } from './filtro/filtro.component';
 
 @NgModule({
   declarations: [
     DetallesComponent,
     ExplorerComponent,
     TableComponent,
-    FiltroVentasComponent
+    TotalComponent,
+    FiltroComponent
   ],
   imports: [
     CommonModule

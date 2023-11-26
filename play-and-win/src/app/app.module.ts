@@ -4,9 +4,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { VentasService } from './services/ventas.service';
+
 import { AutenticacionModule } from './pages/autenticacion/autenticacion.module';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
 import { VentasModule } from './pages/ventas/ventas.module';
+import { CatalogoModule } from './pages/catalogo/catalogo.module';
+
 
 
 @NgModule({
@@ -20,9 +25,10 @@ import { VentasModule } from './pages/ventas/ventas.module';
 
     AutenticacionModule,
     DashboardModule,
-    VentasModule
+    VentasModule,
+    CatalogoModule
   ],
-  providers: [],
+  providers: [VentasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

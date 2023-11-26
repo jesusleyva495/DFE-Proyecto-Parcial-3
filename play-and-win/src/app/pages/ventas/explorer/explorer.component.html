@@ -1,5 +1,7 @@
 <h1>Listado de los juegos</h1>
 
-<app-filtro-ventas [mensaje]="mensaje"> </app-filtro-ventas>
+<app-filtro [mensaje]="mensaje"> </app-filtro>
 
 <app-table [table]="table" [cargandoDatos]="cargandoDatos"> </app-table>
+
+<app-total [mensaje]= "mensaje" [importe]= "importe"></app-total>

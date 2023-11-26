@@ -30,6 +30,19 @@ export class ExplorerComponent{
     }
   }
 
+  get importe(): string {
+    if (this.cargandoDatos) {
+      return 'Cargando...';
+    } else {
+      if (this.table.length > 0) {
+        const total = this.table.reduce((sum, ventas) => sum + ventas.precio, 0);
+        return `${total}`;
+      } else {
+        return 'No se han encontrado registros :(';
+      }
+    }
+  }
+
   private getJuegosListos() {
     this.cargandoDatos = true;
 
@@ -37,5 +50,19 @@ export class ExplorerComponent{
       this.cargandoDatos = false;
       this.table = x;
     })
+  }
+
+  aplicarFiltro(filtro: any){
+    this.table = this.aplicarLogicaFiltro(this.table, filtro);
+  }
+
+  private aplicarLogicaFiltro(datos: Venta[], filtro: any): Venta[] {
+    let resultado: Venta[] = datos;
+
+    if(filtro.estado){
+      resultado = resultado.filter(venta => venta.estado === filtro.estado);
+    }
+
+    return resultado;
   }
 }
